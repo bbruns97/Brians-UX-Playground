@@ -52,7 +52,7 @@
 
 html {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     padding: 0;
     margin: 0;
     font-family: 'Poppins', 'Varela Round', sans-serif;
@@ -63,7 +63,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(-45deg, rgb(255, 89, 89) 0%, rgb(75, 102, 255) 100%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, rgb(40, 255, 94) 0%, rgb(23, 58, 255) 100%);
 }
 
 .tag {
@@ -101,25 +103,6 @@ body {
     border: 2px solid white;
 }
 
-.project_link {
-    text-decoration: none;
-    color: white;
-    padding: 100px 50px;
-    border-radius: 30px;
-    font-size: 50px;
-    max-width: 400px;
-    margin: 20px;
-    display: inline-block;
-    font-weight: bold;
-    background: linear-gradient(to right bottom, rgba(255,255,255,.2), rgba(255,255,255,.5));
-    backdrop-filter: blur(20px);
-    transition: 1s;
-}
-
-.project_link:hover {
-    background: none;
-}
-
   .glass {
       background: linear-gradient(to right bottom, rgba(255,255,255,.5), rgba(255,255,255,.9));
       backdrop-filter: blur(50px);
@@ -128,10 +111,15 @@ body {
   .profile_banner {
       height: 100vh;
       min-height: 100%;
-      width: 25rem;
+      width: 100vw;
       padding: 10px;
       position: fixed;
       overflow-y:scroll;
+      margin: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
   }
 
   #content {
@@ -142,7 +130,7 @@ body {
       position: absolute;
       overflow-y:scroll;
       background-color: white;
-      padding: 50px 200px 500px 50px;
+      padding: 50px 200px 200px 50px;
   }
 
   .index_header {
@@ -177,7 +165,7 @@ body {
   .profile_link {
       display: block;
       height: 50px;
-      width: 60%;
+      width: 200px;
       background: linear-gradient(to right bottom, rgba(255,255,255,.1), rgba(255,255,255,.9));
       border-radius: 25px;
       line-height: 50px;
@@ -228,7 +216,7 @@ body {
       margin: 20px auto;
   }
 
-  @media (max-width: 1000px){
+  /*@media (max-width: 1000px){
       .profile_banner, #content {
           position: relative;
           height: auto;
@@ -265,7 +253,7 @@ body {
       html {
           overflow-y: scroll;
       }
-  }
+  }*/
 
   #content h1 {
       color: #426696;
@@ -273,10 +261,39 @@ body {
       width: 75%;
   }
 
+  #projects {
+      width: 75%;
+  }
+
   #content p {
     color: #426696;
     width: 75%;
     font-size: 20px;
+  }
+
+  .project_wrap {
+      display: inline-block;
+      margin: 20px 20px 20px 0;
+      width: 300px;
+      height: auto;
+  }
+
+  .project_wrap a {
+      display: block;
+      width: 100%;
+      height: fit-content;
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bolder;
+      padding: 30px 50px 30px 20px;
+  }
+
+  .project_wrap img {
+      width: 100%;
+      height: 200px;
+      object-position: left;
+      object-fit: cover;
   }
   
   @keyframes slide {
