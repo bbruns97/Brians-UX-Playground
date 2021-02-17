@@ -31,8 +31,6 @@ body {
     border-right: 2px solid #EEE;
     z-index: 1;
     background-color: white;
-    /*background: linear-gradient(to right bottom, rgba(255,255,255,.2), rgba(255,255,255,.8));
-    backdrop-filter: blur(10px);*/
 }
 
 #content {
@@ -169,5 +167,20 @@ body {
     }
     .projectdesc p, h1, h2, h3, h4, h5, h6 {
         padding-right: 20px;
+    }
+    #leftnav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    #content {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .project_dropper p {
+        font-size: 1rem;
     }
 }
