@@ -13,17 +13,15 @@
         <script>
 
             function showProjectDescription(index){
-                if(index == 1){
-                    var element = document.getElementById("SSG");
-                    element.classList.toggle("hidden")
-                }
-                else if(index == 2){
-                    var element = document.getElementById("costco");
-                    element.classList.toggle("hidden")
-                }
-                else if(index == 3){
-                    var element = document.getElementById("opphack");
-                    element.classList.toggle("hidden")
+                var descs = document.getElementsByClassName('projectdesc');
+                var length = descs.length;
+
+                descs[index - 1].classList.toggle("hidden");
+
+                for(var i = 0; i < length; i++){
+                    if(i != index - 1){
+                        descs[i].classList.add("hidden");
+                    }
                 }
             }
 
@@ -78,7 +76,7 @@
                     <h3>Wireframes</h3>
                     <p>After looking through several storefront sites, mostly content creator merchandise stores, I knew I wanted to present a high-contrast, clean, and modern theme to the team and lead engineers. I wanted to use black and white as my main colors, and allow the product images to create the accents automatically. This way, more attention is applied to the products and the site appears more tailored to the owner. The tool I used to create the first iteration was Figma.</p>
                     <br>
-                    <img src='1.png' />
+                    <img src='1.png' style="max-width: 400px;"/>
                     <p style="font-style: italic; text-align: center;">Mockup 1: Figma</p>
                     <br>
                     <h3>UI Design</h3>
@@ -100,7 +98,7 @@
                     <img src='5.png' />
                     <br><br>
                     <h1 style="text-align: center;">We Deployed the An Example Output Site</h1>
-                    <a href='https://bbruns97.github.io/PayPal-Static-Site-Generator/' target="blank" style='display:block; padding: 10px; background-color: rgb(81, 117, 233); margin: 10px auto; width: fit-content; text-decoration: none; color: white; border-radius: 10px;'>Example Output Site</a>
+                    <a href='https://bbruns97.github.io/PayPal-Static-Site-Generator/' target="blank" style='display:block; padding: 10px; background-color: rgb(81, 117, 233); margin: 10px auto; text-decoration: none; color: white; border-radius: 10px;'>Example Output Site</a>
                     <br><br>
                     <p style="font-style: italic; color: dimgray">"Over the course of one of the most challenging times to the world, you guys worked through a lot of issues together, collaborated well, and regularly demoed great progress using the agile workflow, and that’s pretty dang cool." </p>
                     <p style="margin-top: 0; text-align: center">Senior Software Engineer - PayPal SRE</p>
@@ -121,13 +119,13 @@
                     <h3>Persona Creation</h3>
                     <p>Now that the issues had been identified, the preliminary steps needed to be completed. The first of which was the generation of personas.</p>
                     <br>
-                    <img src='personas.png' />
+                    <img src='personas.png' style="max-width: 400px;"/>
                     <p style="font-style: italic; text-align: center;">A sample of the team's personas</p>
                     <br>
                     <h3>Tasks for Participants</h3>
                     <p>During the mockup and prototyping phase, we devised tasks that our research participants would attempt to accomplish during our evaluation. <br>
                     One example of a task we came up with was: given a starting point (home page), the user is to navigate to the "Outdoor" section of the site and find the "Patio and Grill" sub-section. Once there, the user should search for all electric grills between 300 and 800 dollars using the site's filtration system. Then, the user should add the most expensive grill to their cart and verify that the correct grill was added.</p>
-                    <img src='filter_compare.png' />
+                    <img src='filter_compare.png' style="max-width: 400px;"/>
                     <p style="font-style: italic; text-align: center;">A side-by-side view of the original filter versus the redesign's</p>
                     <br><br>
                     <h3>A/B Testing</h3>
@@ -135,14 +133,14 @@
                     <h3>Test Results and Questionaires</h3>
                     <p>All of the participant's videos were viewed and the data was gathered. From there, T-Tests were performed on the results to determine wether the changes positively affected the user experience. Additionally, all participants were asked to complete a post-experience questionaire to help us correlate visible emotion in the videos to the user's true feelings. This was not a part of the T-Tests, as emotion is difficult to quantitatively evaluate.</p>
                     <br>
-                    <img src='test_results.png' />
+                    <img src='test_results.png' style="max-width: 400px;"/>
                     <p style="font-style: italic; text-align: center;">Some of the test results from the experiment</p>
                     <br><br>
                     <p>It was determined that all of the changes significantly, and positively, affected the user experience across the board. The average time on task, as well as the number of clicks and redirects, was reduced and it was reported that using the redesign was easy and pleasant to use.</p>
                     <h1>Images From The Project</h1>
-                    <img src='cart.png' />
+                    <img src='cart.png' style="max-width: 400px;"/>
                     <br><br>
-                    <img src='search_results.png' />
+                    <img src='search_results.png' style="max-width: 400px;"/>
                     <br><br>
 
                 </div>
@@ -157,17 +155,17 @@
                     <p style="font-style: italic;">Summer 2020</p>
                     <p>Over the Summer of 2020, I participated in a volunteer software engineering internship. I designed, developed and deployed a website for Opportunity Hack, a subsidiary of PayPal, that listed company-endorsed software specifically for non-profits.</p>
                     <p>I led a small team of graduate students at ASU in attempt to develop the website. Together, we created a platform that Opportunity Hack can dynamically control using a Content Management System (CMS) and continuously deploy using Netlify. We also used the Netlify Identity REST API to facilitate user logins and registrations.</p>
-                    <img src='opp1.png' />
+                    <img src='opp1.png' style="max-width: 400px;"/>
                     <p style="font-style: italic; text-align: center;">Thumbnail element for a software solution</p>
                     <br><br>
                     <img src='opp2.png' />
                     <p style="font-style: italic; text-align: center;">A section describing an aspect of Opportunity Hack</p>
                     <br><br>
-                    <img src='opp3.png' />
+                    <img src='opp3.png' style="max-width: 400px;"/>
                     <p style="font-style: italic; text-align: center;">The login and registration UI displayed through the REST API</p>
                     <br><br>
                     <h1 style="text-align: center;">We Deployed the Platform</h1>
-                    <a href='https://opportunityhack.io' target="blank" style='display:block; padding: 10px; background-color: rgb(81, 117, 233); margin: 10px auto; width: fit-content; text-decoration: none; color: white; border-radius: 10px;'>View the Site</a>
+                    <a href='https://opportunityhack.io' target="blank" style='display:block; padding: 10px; background-color: rgb(81, 117, 233); margin: 10px auto; text-decoration: none; color: white; border-radius: 10px;'>View the Site</a>
                     <br><br>
                 </div>
             </div>
