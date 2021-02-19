@@ -131,7 +131,7 @@ body {
     min-height: 200px;
     width: 100%;
     margin: -20px auto 0px auto;
-    padding: 20px;
+    padding: 20px 10px 10px 0;
     z-index: 2;
     position: relative;
 }
@@ -141,7 +141,8 @@ body {
     height: auto;
     margin: 0 auto;
     display: block;
-    box-shadow: 0 0 5px rgb(179, 179, 179);
+    box-shadow: 0 0 5px rgb(214, 214, 214);
+    border-radius: 5px;
 }
 
 .projectdesc a {
@@ -155,13 +156,12 @@ body {
     box-shadow: 0 0 5px rgb(216, 216, 216);
     padding: 0px;
     color: rgb(54,54,54);
-    width: 80%;
-    border-radius: 15px;
+    width: 100%;
     background-color: white;
 }
 
 .projectdesc p, h1, h2, h3, h4, h5, h6 {
-    padding: 0 50px 0 30px;
+    padding: 0 50px 0 50px;
 }
 
 #p_and_e {
